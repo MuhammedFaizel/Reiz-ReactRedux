@@ -1,13 +1,13 @@
-import './App.css';
-import UserProfile from './component/Pages/User/UserProfile';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import UserProfile from "./component/Pages/User/UserProfile";
 
 function App() {
   return (
-  
-    <div className="App">
-     <UserProfile />
-    </div>
-  
+    <Router>
+      <Routes>
+        <Route path="/" element={<UserProfile />} />
+      </Routes>
+    </Router>
   );
 }
 
