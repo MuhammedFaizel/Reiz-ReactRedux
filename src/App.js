@@ -1,13 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserProfile from "./component/Pages/User/UserProfile";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<UserProfile />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<UserProfile />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
